@@ -58,9 +58,6 @@ class CustomerAdd extends React.Component{
 			}
 		}
 
-		console.log('formData');
-		console.log(formData);
-		
 		return post(url, formData, config);
 	}
 	
