@@ -47,8 +47,7 @@ app.post('/api/customers', upload.single('image'), (req, res) => {
 	let params = [image, name, birthday, gender, job];
 	connection.query(sql, params, 
 		(err, rows, fields) => {
-			res.send(rows);
-			console.log(err);
+			res.send(rows);			
 		}
 	);
 })
